@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EA_U202321121_TemaA
 {
-    public partial class FormPrincipal : Form
+    public partial class FrmIngredientes : Form
     {
-        public FormPrincipal()
+        public FrmIngredientes()
         {
             InitializeComponent();
         }

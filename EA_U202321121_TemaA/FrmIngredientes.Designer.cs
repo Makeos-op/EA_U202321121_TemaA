@@ -1,6 +1,6 @@
 ﻿namespace EA_U202321121_TemaA
 {
-    partial class FormPrincipal
+    partial class FrmIngredientes
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormPrincipal";
+            this.Text = "FrmIngredientes";
         }
 
         #endregion

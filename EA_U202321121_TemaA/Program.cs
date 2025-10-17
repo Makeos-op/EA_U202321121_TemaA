@@ -16,7 +16,7 @@ namespace EA_U202321121_TemaA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+            Application.Run(new FrmPrincipal());
         }
     }
 }
