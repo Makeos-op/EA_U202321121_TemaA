@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbSeleccionReporte = new System.Windows.Forms.ComboBox();
             this.btnEjecutarReporte = new System.Windows.Forms.Button();
+            this.cmbSeleccionReporte = new System.Windows.Forms.ComboBox();
             this.dgvResultadosReporte = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosReporte)).BeginInit();
@@ -47,6 +47,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reporte";
             // 
+            // btnEjecutarReporte
+            // 
+            this.btnEjecutarReporte.Location = new System.Drawing.Point(529, 31);
+            this.btnEjecutarReporte.Name = "btnEjecutarReporte";
+            this.btnEjecutarReporte.Size = new System.Drawing.Size(112, 23);
+            this.btnEjecutarReporte.TabIndex = 1;
+            this.btnEjecutarReporte.Text = "Ejecutar";
+            this.btnEjecutarReporte.UseVisualStyleBackColor = true;
+            this.btnEjecutarReporte.Click += new System.EventHandler(this.btnEjecutarReporte_Click);
+            // 
             // cmbSeleccionReporte
             // 
             this.cmbSeleccionReporte.FormattingEnabled = true;
@@ -61,16 +71,6 @@
             this.cmbSeleccionReporte.Name = "cmbSeleccionReporte";
             this.cmbSeleccionReporte.Size = new System.Drawing.Size(479, 24);
             this.cmbSeleccionReporte.TabIndex = 0;
-            // 
-            // btnEjecutarReporte
-            // 
-            this.btnEjecutarReporte.Location = new System.Drawing.Point(529, 31);
-            this.btnEjecutarReporte.Name = "btnEjecutarReporte";
-            this.btnEjecutarReporte.Size = new System.Drawing.Size(112, 23);
-            this.btnEjecutarReporte.TabIndex = 1;
-            this.btnEjecutarReporte.Text = "button1";
-            this.btnEjecutarReporte.UseVisualStyleBackColor = true;
-            this.btnEjecutarReporte.Click += new System.EventHandler(this.btnEjecutarReporte_Click);
             // 
             // dgvResultadosReporte
             // 
@@ -90,7 +90,7 @@
             this.Controls.Add(this.dgvResultadosReporte);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmReportes";
-            this.Text = "FrmReportes";
+            this.Text = "Reportes";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosReporte)).EndInit();
             this.ResumeLayout(false);

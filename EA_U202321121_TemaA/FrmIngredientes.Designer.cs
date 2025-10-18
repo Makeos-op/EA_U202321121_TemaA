@@ -67,11 +67,11 @@
             // 
             // btnRegistrarIngrediente
             // 
-            this.btnRegistrarIngrediente.Location = new System.Drawing.Point(62, 47);
+            this.btnRegistrarIngrediente.Location = new System.Drawing.Point(56, 51);
             this.btnRegistrarIngrediente.Name = "btnRegistrarIngrediente";
-            this.btnRegistrarIngrediente.Size = new System.Drawing.Size(100, 23);
+            this.btnRegistrarIngrediente.Size = new System.Drawing.Size(117, 38);
             this.btnRegistrarIngrediente.TabIndex = 0;
-            this.btnRegistrarIngrediente.Text = "button1";
+            this.btnRegistrarIngrediente.Text = "Registrar";
             this.btnRegistrarIngrediente.UseVisualStyleBackColor = true;
             this.btnRegistrarIngrediente.Click += new System.EventHandler(this.btnRegistrarIngrediente_Click);
             // 
@@ -131,38 +131,38 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 122);
+            this.label3.Location = new System.Drawing.Point(13, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.label3.Text = "Cantidad";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(23, 94);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(35, 16);
             this.label4.TabIndex = 2;
-            this.label4.Text = "label4";
+            this.label4.Text = "Tipo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 64);
+            this.label2.Location = new System.Drawing.Point(18, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(23, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Código";
             // 
             // FrmIngredientes
             // 
@@ -173,7 +173,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmIngredientes";
-            this.Text = "FrmIngredientes";
+            this.Text = "Ingredientes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoIngredientes)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

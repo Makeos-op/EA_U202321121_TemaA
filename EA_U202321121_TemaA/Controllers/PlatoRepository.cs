@@ -9,10 +9,10 @@ namespace EA_U202321121_TemaA.Repositories
 {
     internal class PlatoRepository
     {
-        private static List<Plato> platos = new List<Plato>();
+        private static List<Plato> platos = new List<Plato>(); // Lista Estatica de Platos (BASE DE DATOS SIMULADA)
 
         // Registro ( Tipo de dato : Objeto Plato.cs plato = nombre ) 
-        public bool RegistrarPlato(Plato plato)
+        public bool RegistrarPlato(Plato plato) // Metodo para registrar un plato
         {
             platos.Add(plato);
             return true;
@@ -22,7 +22,7 @@ namespace EA_U202321121_TemaA.Repositories
         {
             return platos;
         }
-
+        // Reportes
         public List<Plato> MostrarPlatosPorPrecio()
         {
             return platos.OrderBy(p => p.Precio).ToList(); // Ordena los platos por precio de menor a mayor
@@ -30,7 +30,7 @@ namespace EA_U202321121_TemaA.Repositories
         public List<Plato> PlatosMayorIngredientes()
         {
             int maxIngredientes =
-                platos.Count == 0 ? // Si no hay platos, el máximo es 0
+                platos.Count == 0 ? // Si no hay platos, el máximo es 0  //condicional? valor_si_verdadero : valor_si_falso
                 0
                 :
                 platos.Max(k => k.Ingredientes.Count); // Encuentra el número máximo de ingredientes en los platos existentes

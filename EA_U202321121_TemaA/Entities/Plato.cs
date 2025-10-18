@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace EA_U202321121_TemaA.Entities
 {
-    internal class Plato
+    internal class Plato //Clase Plato (Padre)
     {
-        public Plato() 
+        public Plato() //Constructores
         {
-            Ingredientes = new List<Ingrediente>();
+            Ingredientes = new List<Ingrediente>(); //Inicializa la lista de ingredientes
         }
-        public string Codigo { get; set; }
-        public string Nombre { get; set; }
-        public string TipoCocina { get; set; }
-        public double Precio { get; set; }
-        public List<Ingrediente> Ingredientes { get; set; }
+        public string Codigo { get; set; } //Propiedades
+        public string Nombre { get; set; }//Propiedades
+        public string TipoCocina { get; set; }//propiedades
+        public double Precio { get; set; }//Propiedades
+        public List<Ingrediente> Ingredientes { get; set; } //Propiedades DE LISTA
     }
 }

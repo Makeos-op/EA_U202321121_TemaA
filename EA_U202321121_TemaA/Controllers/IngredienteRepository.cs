@@ -25,7 +25,7 @@ namespace EA_U202321121_TemaA.Repositories
         public bool ExisteIngrediente(string codigoIngrediente)
         {
             List<Plato> platos = PlatoRepository.MostrarPlatos(); // Obtienes todos los platos disponibles
-            return platos.Any(p => p.Ingredientes.Any(i => i.Codigo.Equals(codigoIngrediente))); // Verificas si algún plato tiene un ingrediente con el código dado
+            return platos.Any(p => p.Ingredientes.Any(i => i.Codigo.Equals(codigoIngrediente)) || p.Codigo.Equals(codigoIngrediente)); 
         }
         // Mostrar
         public List<Ingrediente> MostrarIngredientes(string codigoPlato)

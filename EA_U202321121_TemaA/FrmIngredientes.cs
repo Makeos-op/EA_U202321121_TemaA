@@ -27,6 +27,11 @@ namespace EA_U202321121_TemaA
             if (txtCodigoIngrediente.Text == "" || txtNombreIngrediente.Text == "" || cmbTipoIngrediente.Text == "" || txtCantidadIngrediente.Text == "")
             {
                 MessageBox.Show("Faltan datos por completar");
+                return;
+            }
+            if (double.Parse(txtCantidadIngrediente.Text)<0) {
+                MessageBox.Show("No se admiten valores Negativos");
+                return;
             }
             Ingrediente ingrediente = new Ingrediente();
             {
@@ -37,7 +42,7 @@ namespace EA_U202321121_TemaA
             }
             ;
             bool registrado = ingredienteService.RegistrarIngrediente(codigoPlato, ingrediente);
-            if (!registrado)
+            if (!registrado)  //Si no se registró porque ya existe
             {
                 MessageBox.Show("El ingrediente ya existe");
                 return;

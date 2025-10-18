@@ -29,9 +29,9 @@ namespace EA_U202321121_TemaA
             dgvResultadosReporte.DataSource = platos;
         }
 
-        private void btnEjecutarReporte_Click(object sender, EventArgs e)
+        private void btnEjecutarReporte_Click(object sender, EventArgs e) //Cuando se hace clic en el botón de ejecutar reporte
         {
-            switch(cmbSeleccionReporte.Text)
+            switch(cmbSeleccionReporte.Text) //Evalúa la opción seleccionada en el ComboBox
             {
                 case "Listar los platos especiales ordenándolos ascendentemente por su precio de venta":
                     Mostrar(platoService.MostrarPlatosPorPrecio());
