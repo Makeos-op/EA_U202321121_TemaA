@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B499FF4-DB54-4A46-A7CA-9663C352999B}</ProjectGuid>
+    <ProjectGuid>{BFF2B5F5-8B37-475B-8D5B-3981EF3829BE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EA_U202321121_TemaA</RootNamespace>
-    <AssemblyName>EA_U202321121_TemaA</AssemblyName>
+    <RootNamespace>EA_BattleRoyale_TemaA</RootNamespace>
+    <AssemblyName>EA_BattleRoyale_TemaA</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,48 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Ingrediente.cs" />
-    <Compile Include="Entities\Plato.cs" />
-    <Compile Include="FrmIngredientes.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngredientes.Designer.cs">
-      <DependentUpon>FrmIngredientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPlatos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPlatos.Designer.cs">
-      <DependentUpon>FrmPlatos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmReportes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmReportes.Designer.cs">
-      <DependentUpon>FrmReportes.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\IngredienteRepository.cs" />
-    <Compile Include="Controllers\PlatoRepository.cs" />
-    <EmbeddedResource Include="FrmIngredientes.resx">
-      <DependentUpon>FrmIngredientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPlatos.resx">
-      <DependentUpon>FrmPlatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmReportes.resx">
-      <DependentUpon>FrmReportes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -110,6 +76,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

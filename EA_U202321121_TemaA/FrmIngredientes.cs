@@ -1,5 +1,5 @@
 ﻿using EA_U202321121_TemaA.Entities;
-using EA_U202321121_TemaA.Services;
+using EA_U202321121_TemaA.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace EA_U202321121_TemaA
 {
     public partial class FrmIngredientes : Form
     {
-        private IngredienteService ingredienteService = new IngredienteService();
+        private IngredienteRepository ingredienteService = new IngredienteRepository();
         private string codigoPlato;
         public FrmIngredientes(string codigoplato)
         {

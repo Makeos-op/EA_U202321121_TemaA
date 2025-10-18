@@ -1,5 +1,5 @@
 ﻿using EA_U202321121_TemaA.Entities;
-using EA_U202321121_TemaA.Services;
+using EA_U202321121_TemaA.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace EA_U202321121_TemaA
 {
     public partial class FrmReportes : Form
     {
-        private PlatoService platoService = new PlatoService();
+        private PlatoRepository platoService = new PlatoRepository();
         public FrmReportes()
         {
             InitializeComponent();
