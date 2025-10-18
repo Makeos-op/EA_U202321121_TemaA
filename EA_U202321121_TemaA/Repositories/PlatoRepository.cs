@@ -39,8 +39,8 @@ namespace EA_U202321121_TemaA.Repositories
         }
         public List<Plato> PlatosCocinaPeruana()
         {
-            List<Plato> PlatosCocinaPeruana = platos.Where(p => p.TipoCocina == "Cocina Peruana").ToList(); // Filtra los platos que son de cocina peruana
-            return PlatosCocinaPeruana.Where(j=>j.Ingredientes.Exists(i=>i.CantidadKG.Equals(1))).ToList(); // De esos platos, retorna solo los que tienen al menos un ingrediente con cantidad igual a 1 kg
+            List<Plato> PlatosCocinaPeruana = platos.Where(p => p.TipoCocina == "Peruana").ToList(); // Filtra los platos que son de cocina peruana
+            return PlatosCocinaPeruana.Where(j=>j.Ingredientes.Exists(i=>i.CantidadKG<1)).ToList(); // De esos platos, retorna solo los que tienen al menos un ingrediente con cantidad igual a 1 kg
         }
         public List<Plato> PlatosConMenorIngredientePescado()
         {

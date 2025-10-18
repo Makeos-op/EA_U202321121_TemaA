@@ -10,9 +10,9 @@ namespace EA_U202321121_TemaA.Repositories
     // Logica del programa 
     internal class IngredienteRepository
     {
-        public bool RegistrarPlato(string CodigoPlato,Ingrediente ingrediente)
+        public bool RegistrarIngrediente(string CodigoPlato,Ingrediente ingrediente)
         {
-            if (ExisteIngrediente(CodigoPlato,ingrediente.Codigo))
+            if (ExisteIngrediente(ingrediente.Codigo))
             {
                 return false;
             }
@@ -22,11 +22,10 @@ namespace EA_U202321121_TemaA.Repositories
             return true;
         }
         // Duplicado
-        public bool ExisteIngrediente(string codigoPlato,string codigoIngrediente)
+        public bool ExisteIngrediente(string codigoIngrediente)
         {
             List<Plato> platos = PlatoRepository.MostrarPlatos(); // Obtienes todos los platos disponibles
-            Plato plato = platos.Find(p => p.Codigo.Equals(codigoPlato)); //Encuentras el plato específico por su código
-            return plato.Ingredientes.Exists(p => p.Codigo.Equals(codigoIngrediente)); // Verificas si el ingrediente ya existe en ese plato
+            return platos.Any(p => p.Ingredientes.Any(i => i.Codigo.Equals(codigoIngrediente))); // Verificas si algún plato tiene un ingrediente con el código dado
         }
         // Mostrar
         public List<Ingrediente> MostrarIngredientes(string codigoPlato)

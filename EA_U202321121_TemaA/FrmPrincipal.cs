@@ -18,5 +18,21 @@ namespace EA_U202321121_TemaA
 
         }
 
+        private void btnPlatos_Click(object sender, EventArgs e)
+        {
+            FrmPlatos form = new FrmPlatos();
+            form.Show();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            FrmReportes form = new FrmReportes();
+            form.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
